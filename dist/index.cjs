@@ -456,7 +456,7 @@ async function handleUserInput(input, agentId) {
     return;
   }
   try {
-    const serverPort = parseInt(import_eliza2.settings.SERVER_PORT || "3000");
+    const serverPort = parseInt(import_eliza2.settings.SERVER_PORT || "3001");
     const response = await fetch(
       `http://localhost:${serverPort}/${agentId}/message`,
       {
